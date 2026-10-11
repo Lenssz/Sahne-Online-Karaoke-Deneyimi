@@ -22,16 +22,30 @@
 
 # misc
 .DS_Store
+Thumbs.db
+Desktop.ini
 *.pem
+*.key
+*.p12
+*.pfx
 
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+*.log
+*.log.*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
+.envrc
+.npmrc
+.pypirc
+credentials*.json
+secrets*.json
+service-account*.json
 
 # vercel
 .vercel
@@ -39,3 +53,88 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local Python environments, caches and model downloads
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+/worker/build/
+/worker/dist/
+/worker/models/
+/worker/checkpoints/
+*.pt
+*.pth
+*.th
+*.ckpt
+*.onnx
+
+# private media and worker output (never commit room recordings or clips)
+*.mp4
+*.m4v
+*.mov
+*.avi
+*.mkv
+*.webm
+*.mp3
+*.wav
+*.flac
+*.m4a
+*.aac
+*.ogg
+*.opus
+/uploads/
+/recordings/
+/renders/
+/downloads/
+/tmp/
+/temp/
+/worker/jobs/
+/worker/output/
+/worker/outputs/
+/worker/separated/
+/worker/tmp/
+/worker/temp/
+
+# local settings, browser sessions and tunnel credentials
+/worker/config.json
+/worker/config.*.json
+/SahneWorker/
+/SahneTestRoles/
+/.cloudflared/
+cloudflared*.exe
+*.har
+*.cookies.json
+storage-state*.json
+storageState*.json
+/playwright/.auth/
+/test-results/
+/playwright-report/
+/.codex/
+/.agents/
+/.aws/
+
+# database exports and local backups; keep supabase/migrations/*.sql
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.sqlite3-*
+*.dump
+*.sql.gz
+*.sql.zip
+*.bak
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+/backups/
+/dumps/
+/supabase/.temp/
+/supabase/.branches/

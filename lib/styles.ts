@@ -1,0 +1,1 @@
+export const fieldClass = 'mt-2 w-full rounded-[12px] border border-white/20 bg-[#11121d] px-3.5 py-3 text-sm text-white placeholder:text-[#9899aa] outline-none focus:border-[#c4a6ff] focus:ring-2 focus:ring-[#a989f6]/25';

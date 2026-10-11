@@ -1,0 +1,11 @@
+# Python 3.11 x64. Keep the Demucs/PyTorch combination stable on Windows.
+numpy==1.26.4
+torch==2.1.2
+torchaudio==2.1.2
+demucs==4.0.1
+SoundFile==0.12.1
+requests==2.32.3
+keyring==25.6.0
+pystray==0.19.5
+Pillow==10.4.0
+imageio-ffmpeg==0.5.1
